@@ -8,48 +8,135 @@
 </head>
 <body>
     <header>
-        <h1>Carlos Castaño</h1>
+        <h1><i>Carlos D Castaño</i> </h1>
 
         <nav>
-            <ul>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="mascotas.html">Mascotas</a></li> <!-- Enlace solicitado -->
-            </ul>
+            <a href="#about-me">About me</a>
+            <a href="#proyects">Proyects</a>
+            <a href="#contact-me">Contact me</a>
+            <a href="pets.html">Pets</a>
         </nav>
     </header>
 
-    <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>
-            Soy Carlos Castaño, un entusiasta del desarrollo web y el aprendizaje constante.
-            Me gusta explorar nuevas tecnologías y mejorar mis habilidades día a día.
-        </p>
-    </section>
+    <aside>
 
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <ul>
-            <li><a href="#">Proyecto 1</a></li>
-            <li><a href="#">Proyecto 2</a></li>
-            <li><a href="#">Proyecto 3</a></li>
-        </ul>
-    </section>
+    </aside>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
+    <main>
+        
+        <section id="about-me">
+            <h2 id="aboutme">About me</h2>
+            <h3 id="myphotos">My photos</h3>
 
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <div id="articles-container">
 
-            <label for="correo">Correo:</label>
-            <input type="email" id="correo" name="correo" required>
+                <article>   
+                    <img src="./img/yo_principal.jpg" alt="" class="photos">
+                    <p>I am 29 years old and I love <br>spending time with my loved ones</p>
+                </article>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+                <article>
+                    <img src="./img/family.jpg" alt="This is a photo of my family" class="photos">
+                    <p>My family</p>
+                </article>
+
+                <article>   
+                    <img src="./img/wife.jpg" alt="" class="photos">
+                    <p>My beautiful wife</p>
+                </article>
+
+                <article>
+                    <img src="./img/traveling.jpg" alt="" class="photos">
+                    <p>I love traveling</p>
+                </article>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <section id = "proyects">
+            <h2 id="proyects">Proyects</h2>
+            <div id="proyects-container">
+                <article>
+                    <h3>JAVA</h3>
+                    <p>proyect made for a big company and I earned a lot of $ million</p>
+                    <p>Repo en git: <a href="#">https://something.git.somethin</a></p>
+                </article>
+
+
+                <article>
+                    <h3>PYTHON</h3>
+                    <p>proyect made for a big company and I earned a lot of $ million</p>
+                    <p>Repo en git: <a href="#">https://something.git.somethin</a></p>
+                </article>
+
+
+                <article>
+                    <h3>PYTHON</h3>
+                    <p>proyect made for a big company and I earned a lot of $ million</p>
+                    <p>Repo en git: <a href="#">https://something.git.somethin</a></p>
+                </article>
+
+
+                <article>
+                    <h3>PYTHON</h3>
+                    <p>proyect made for a big company and I earned a lot of $ million</p>
+                    <p>Repo en git: <a href="#">https://something.git.somethin</a></p>
+                </article>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact-me" class="contact">
+            
+                <h2 id="contactme">Contact Me</h2>
+                <p class="subtitle">Feel free to reach out if you want to work together or just say hello.</p>
+            
+
+            <div class="contact-container">
+
+                <article>
+                    <h3>Contact Information</h3>
+                    <p>You can reach me through any of the following methods:</p>
+
+                    <ul class="contact-list">
+                        <li><strong>Email:</strong> carlos.castano@example.com</li>
+                        <li><strong>Phone:</strong> +57 300 555 1234</li>
+                        <li><strong>Location:</strong> Medellín, Colombia</li>
+                        <li><strong>LinkedIn:</strong> linkedin.com/in/carloscastano</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Send Me a Message</h3>
+
+                    <form action="#" method="post">
+
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Your name" required>
+
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="yourname@example.com" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+
+                        <button type="submit">Send Message</button>
+
+                    </form>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <address>All rights reserved</address>
+    </footer>
 
 </body>
 </html>
