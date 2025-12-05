@@ -120,15 +120,15 @@ hr {
 
 #proyects {
     padding: 10px;
-    background-color: black;   
-    color: antiquewhite;
+    background-image: url(img/beige.png);   
+    color: black;
 
 }
 
 #proyects article {
     margin-bottom: 20px;
-    background-image: url("./img/beige.png");
-    color: black;
+    background-color: black;
+    color: antiquewhite;
 
     
 }
@@ -142,11 +142,31 @@ hr {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 
+}
 
+#proyects-container article{
+    transition: 0.5s; box-shadow: 0.5s;
+}
+
+#proyects-container article:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 10px blanchedalmond;
 
 }
+
 #proyects {
     text-align: center;
+}
+
+
+
+#contact-me {
+    background-color: black;
+    color:antiquewhite;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    border-radius: 10px;
 }
 
 #contactme {
@@ -154,9 +174,9 @@ hr {
     
 }
 
-#contact-me {
-    background-color: black;
-    color:antiquewhite
+#subtitle{
+    text-align: center;
+
 }
 
 .contact-container article{
@@ -165,7 +185,11 @@ hr {
     color: black;
 }
 
+section {
+    margin: 0.5rem;
+}
 
+/*PEEEETTTSSSS*/
 
 
 #pets-section {
