@@ -14,13 +14,9 @@
             <a href="#about-me">About me</a>
             <a href="#proyects">Proyects</a>
             <a href="#contact-me">Contact me</a>
-            <a href="pets.html">Pets</a>
+            <a id="pets-link" href="pets.html">Pets</a>
         </nav>
     </header>
-
-    <aside>
-
-    </aside>
 
     <main>
         
@@ -32,7 +28,8 @@
 
                 <article>   
                     <img src="./img/yo_principal.jpg" alt="" class="photos">
-                    <p>I am 29 years old and I love <br>spending time with my loved ones</p>
+                    <p id="about-text">I am 29 years old and I love <br>spending time with my loved ones</p>
+                    <button id="change-text-btn">Change text</button>
                 </article>
 
                 <article>
@@ -72,10 +69,13 @@
                 </article>
 
 
-                <article>
+                <article id="js-project">
                     <h3>JS</h3>
                     <p>proyect made for a big company and I earned a lot of $ million</p>
-                    <p>Repo en git: <a href="#">https://something.git.somethin</a></p>
+                    <button id="toggle-js-project">Show/Hide details</button>
+                    <div class="details" style="display:none;">
+                        <p>This is a JavaScript project where I learned a lot.</p>
+                    </div>
                 </article>
 
 
@@ -110,7 +110,7 @@
                     </ul>
                 </article>
 
-                <article>
+                <article class="form">
                     <h3>Send Me a Message</h3>
 
                     <form action="#" method="post">
@@ -124,7 +124,7 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
 
-                        <button type="submit">Send Message</button>
+                        <button id="boton" type="submit">Send Message</button>
 
                     </form>
                 </article>
@@ -137,6 +137,6 @@
     <footer>
         <address>All rights reserved</address>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
