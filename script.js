@@ -6,9 +6,13 @@ const aboutText = document.getElementById('about-text');
 const changeTextBtn = document.getElementById('change-text-btn');
 
 changeTextBtn.addEventListener('click', function() {
-    aboutText.textContent = "¡The text has been updated! Now you know more about me.";
-    aboutText.style.color = "blue";
-
+    if (aboutText.textContent === "¡The text has been updated! Now you know more about me.") {
+        aboutText.textContent = "I am 29 years old and I love spending time with my loved ones";
+        aboutText.style.color = "black";
+    } else {
+        aboutText.textContent = "¡The text has been updated! Now you know more about me.";
+        aboutText.style.color = "blue";
+    }
 });
 
 
